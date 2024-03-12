@@ -1,0 +1,119 @@
+/* 
+
+    Author: Zidan
+    Github: https://github.com/Zidaan16
+    Instagram: https://instagram.com/zidaaaaanz
+
+*/
+
+* {
+    margin: 0;
+}
+
+.sidebar {
+    background-color: rgb(24, 24, 24);
+    position: fixed;
+    float: left;
+    height: 100vh;
+    width: 4.5rem;
+    overflow: hidden;
+    white-space: nowrap;
+
+}
+
+.sidebar-animation-in {
+    animation-name: slide-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.sidebar-animation {
+    animation-name: slide-out;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.sidebar .sidebar-header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 5%;
+    padding: 25px 25px;
+}
+
+.sidebar .sidebar-header .sidebar-container {
+    width: 100%;
+}
+
+.sidebar .sidebar-header .sidebar-title{
+    color: white;
+    float: left;
+}
+
+.sidebar .sidebar-header .sidebar-menu {
+    background-color: rgb(24, 24, 24);
+    padding: 0 25px;
+    color: white;
+    position: absolute;
+    cursor: pointer;
+    font-size: 25px;
+    right: 0;
+}
+
+.sidebar-icon {
+    padding: 10px;
+    margin: 0 19px;
+    border-radius: 8px;
+    background-color: rgb(80, 80, 80);
+}
+
+.sidebar .sidebar-item .dropdown-icon {
+    position: absolute;
+    right: 15px;
+    top: 19px;
+}
+
+.sidebar .sidebar-item, .sidebar .dropdown-menu .dropdown-item {
+    display: block;
+    text-decoration: none;
+    position: relative;
+    color: white;
+    cursor: pointer;
+    padding: 10px 25px 10px 0;
+    font-size: 14px;
+}
+
+.sidebar .dropdown-menu, .sidebar .sidebar-item:hover, .sidebar .sidebar-item:focus, .dropdown-active {
+    background-color: rgb(39, 39, 39);
+}
+
+.sidebar .dropdown-menu .dropdown-item:hover, .sidebar .dropdown-menu .dropdown-item:focus {
+    background-color: rgb(53, 53, 53);
+}
+
+.caret-animation {
+    rotate: 180deg;
+}
+
+.dropdown-hide {
+    display: none;
+}
+
+@keyframes slide-out {
+    from {
+        width: 4.5rem;
+    }
+    to {
+        width: 20rem;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        width: 20rem;
+    }
+    to {
+        width: 4.5rem;
+    }
+}
+
